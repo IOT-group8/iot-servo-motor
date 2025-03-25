@@ -1,0 +1,190 @@
+ld:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40803a2a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x304c
+entry 0x4086c11a
+[0;32mI (24) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb 24 2025 16:58:36[0m
+[0;32mI (25) boot: chip revision: v0.0[0m
+[0;32mI (25) boot: efuse block revision: v0.1[0m
+[0;32mI (28) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=08cb4h ( 36020) map[0m
+[0;32mI (90) esp_image: segment 1: paddr=00018cdc vaddr=40800000 size=0733ch ( 29500) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=123b8h ( 74680) map[0m
+[0;32mI (111) esp_image: segment 3: paddr=000323e0 vaddr=4080733c size=03b7ch ( 15228) load[0m
+[0;32mI (116) esp_image: segment 4: paddr=00035f64 vaddr=4080aec0 size=01788h (  6024) load[0m
+[0;32mI (120) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (121) boot: Disabling RNG early entropy source...[0m
+[0;32mI (137) cpu_start: Unicore app[0m
+[0;32mI (145) cpu_start: Pro cpu start user code[0m
+[0;32mI (145) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (146) app_init: Application information:[0m
+[0;32mI (146) app_init: Project name:     strumming_project[0m
+[0;32mI (150) app_init: App version:      1[0m
+[0;32mI (153) app_init: Compile time:     Feb 24 2025 16:58:19[0m
+[0;32mI (159) app_init: ELF file SHA256:  2492b6fab...[0m
+[0;32mI (163) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (167) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (170) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (174) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (178) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (184) heap_init: At 4080D5B0 len 0006F060 (444 KiB): RAM[0m
+[0;32mI (190) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (195) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (201) spi_flash: detected chip: generic[0m
+[0;32mI (204) spi_flash: flash io: dio[0m
+[0;33mW (207) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (219) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (225) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (232) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (236) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (240) main_task: Started on CPU0[0m
+[0;32mI (240) main_task: Calling app_main()[0m
+[0;32mI (240) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (2250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (4250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (6250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (8250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (10250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (12250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (14250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (16250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (18250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (20250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (22250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (24250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (26250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (28250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (30250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (32250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (34250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (36250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (38250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (40250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (42250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (44250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (46250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (48250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (50250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (52250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (54250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (56250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (58250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (60250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (62250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (64250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (66250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (68250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (70250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (72250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (74250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (76250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (78250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (80250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (82250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (84250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (86250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (88250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (90250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (92250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (94250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (96250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (98250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (100250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (102250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (104250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (106250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (108250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (110250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (112250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (114250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (116250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (118250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (120250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (122250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (124250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (126250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (128250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (130250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (132250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (134250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (136250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (138250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (140250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (142250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (144250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (146250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (148250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (150250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (152250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (154250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (156250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (158250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (160250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (162250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (164250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (166250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (168250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (170250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (172250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (174250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (176250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (178250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (180250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (182250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (184250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (186250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (188250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (190250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (192250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (194250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (196250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (198250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (200250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (202250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (204250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (206250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (208250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (210250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (212250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (214250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (216250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (218250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (220250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (222250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (224250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (226250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (228250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (230250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (232250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (234250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (236250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (238250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (240250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (242250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (244250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (246250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (248250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (250250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (252250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (254250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (256250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (258250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (260250) servo_pwm: Setting servo to 180°[0m
+[0;32mI (262250) servo_pwm: Setting servo to 90°[0m
+[0;32mI (264250) servo_pwm: Setting servo to 0°[0m
+[0;32mI (266250) servo_pwm: Setting servo to 180°[0m

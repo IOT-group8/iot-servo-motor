@@ -1,0 +1,278 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x2c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x304c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb 24 2025 16:58:36[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (24) boot: efuse block revision: v0.1[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=08cd8h ( 36056) map[0m
+[0;32mI (89) esp_image: segment 1: paddr=00018d00 vaddr=40800000 size=07318h ( 29464) load[0m
+[0;32mI (96) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1242ch ( 74796) map[0m
+[0;32mI (111) esp_image: segment 3: paddr=00032454 vaddr=40807318 size=03ba0h ( 15264) load[0m
+[0;32mI (115) esp_image: segment 4: paddr=00035ffc vaddr=4080aec0 size=01788h (  6024) load[0m
+[0;32mI (119) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (120) boot: Disabling RNG early entropy source...[0m
+[0;32mI (136) cpu_start: Unicore app[0m
+[0;32mI (144) cpu_start: Pro cpu start user code[0m
+[0;32mI (145) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (145) app_init: Application information:[0m
+[0;32mI (145) app_init: Project name:     strumming_project[0m
+[0;32mI (149) app_init: App version:      1[0m
+[0;32mI (153) app_init: Compile time:     Feb 24 2025 16:58:19[0m
+[0;32mI (158) app_init: ELF file SHA256:  9a3b2d339...[0m
+[0;32mI (162) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (166) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (170) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (174) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (177) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (184) heap_init: At 4080D5B0 len 0006F060 (444 KiB): RAM[0m
+[0;32mI (189) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (194) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (200) spi_flash: detected chip: generic[0m
+[0;32mI (203) spi_flash: flash io: dio[0m
+[0;33mW (206) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (218) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (225) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (231) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (250) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (250) main_task: Started on CPU0[0m
+[0;32mI (250) main_task: Calling app_main()[0m
+[0;32mI (250) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (250) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (1260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (2260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (3260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (4260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (5260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (6260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (7260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (8260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (9260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (10260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (11260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (12260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (13260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (14260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (15260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (16260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (17260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (18260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (19260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (20260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (21260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (22260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (23260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (24260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (25260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (26260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (27260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (28260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (29260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (30260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (31260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (32260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (33260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (34260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (35260) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (36260) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (37310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (38310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (39310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (40310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (41310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (42310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (43310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (44310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (45310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (46310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (47310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (48310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (49310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (50310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (51310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (52310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (53310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (54310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (55310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (56310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (57310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (58310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (59310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (60310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (61310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (62310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (63310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (64310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (65310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (66310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (67310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (68310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (69310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (70310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (71310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (72310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (73310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (74310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (75310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (76310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (77310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (78310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (79310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (80310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (81310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (82310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (83310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (84310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (85310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (86310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (87310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (88310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (89310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (90310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (91310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (92310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (93310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (94310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (95310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (96310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (97310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (98310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (99310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (100310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (101310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (102310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (103310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (104310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (105310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (106310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (107310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (108310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (109310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (110310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (111310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (112310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (113310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (114310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (115310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (116310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (117310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (118310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (119310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (120310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (121310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (122310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (123310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (124310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (125310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (126310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (127310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (128310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (129310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (130310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (131310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (132310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (133310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (134310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (135310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (136310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (137310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (138310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (139310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (140310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (141310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (142310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (143310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (144310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (145310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (146310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (147310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (148310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (149310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (150310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (151310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (152310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (153310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (154310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (155310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (156310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (157310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (158310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (159310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (160310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (161310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (162310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (163310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (164310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (165310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (166310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (167310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (168310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (169310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (170310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (171310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (172310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (173310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (174310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (175310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (176310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (177310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (178310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (179310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (180310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (181310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (182310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (183310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (184310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (185310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (186310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (187310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (188310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (189310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (190310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (191310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (192310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (193310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (194310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (195310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (196310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (197310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (198310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (199310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (200310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (201310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (202310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (203310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (204310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (205310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (206310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (207310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (208310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (209310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (210310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (211310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (212310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (213310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (214310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (215310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (216310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (217310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (218310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (219310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (220310) servo_pwm: Fast transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
+[0;32mI (221310) servo_pwm: Slow transition: 180° in 50 ms (approx. 3600.00 deg/s)[0m
