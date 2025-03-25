@@ -1,4 +1,4 @@
-# Dual Servo Motor Control Example
+# Dual Servo Motor Control
 
 This demonstrates controlling two servo motors using FreeRTOS and ESP-IDF. The servos are driven using PWM signals, and smooth transitions between positions are implemented with timed increments.
 
